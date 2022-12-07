@@ -1,0 +1,26 @@
+{
+  "name": "prova-be-30-11",
+  "version": "1.0.0",
+  "description": "<img align=\"right\" alt=\"Rafa-pic\" height=\"150\" style=\"border-radius:50px;\" src=\"https://media0.giphy.com/media/iJJ6E58EttmFqgLo96/giphy.webp?cid=ecf05e47i95ldvcyjmncmko9v04jwj63xo2inb31b84wbgmg&rid=giphy.webp&ct=g\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrenksSS/Prova-BE-30-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrenksSS/Prova-BE-30-11/issues"
+  },
+  "homepage": "https://github.com/TrenksSS/Prova-BE-30-11#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
