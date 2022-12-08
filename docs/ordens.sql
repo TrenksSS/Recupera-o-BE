@@ -28,13 +28,9 @@ insert into ordem values(default,'2','colocar caixa de gordura', '600');
 insert into ordem values(default,'3','consertar tomada', '200');
 insert into ordem values(default,'4','trocar luz', '50');
 
-
 create view vw_info as
 select f.id_funcionario, f.nome, f.especialidade, o.id_ordem, o.funcionario, o.descricao from funcionarios f
 inner join ordem o on o.funcionario = f.id_funcionario;
-
-
-
 
 select * from funcionarios;
 select * from ordem;

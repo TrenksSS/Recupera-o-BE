@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 3000
 const express = require('express');
 const cors = require('cors');
 
-const funcionario = require('./back/routes/Funcionarios.route');
+const funcionario = require('./routes/Funcionarios.route');
 
 //Iniciar a API
 const app = express()

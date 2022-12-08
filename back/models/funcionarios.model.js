@@ -8,8 +8,8 @@ class funcionario {
     static read = () => {
         return "SELECT * FROM funcionarios";
     }
-    static readAll = () => {
-        return "SELECT * FROM vw_info WHERE id_funcionario = ${id}";
+    static readAll = (model) => {
+        return `SELECT * FROM vw_info WHERE id_funcionario = ${model.id_funcionario}`;
     }
     static create(data) {
         return `INSERT INTO funcionarios VALUES(default,'${data.nome}','${data.especialidade}')`

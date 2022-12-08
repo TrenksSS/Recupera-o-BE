@@ -1,5 +1,7 @@
 const funcionarios = require('../models/funcionarios.model');
 const con = require('../dao/modelDAO');
+const conp = require('../controlles/composite');
+
 
 
 
@@ -12,9 +14,9 @@ const read = (req, res) => {
     });
 }
 const readAll = (req, res) => {
-    con.query(funcionarios.readAll(req.params.id), (err, result) => {
+    con.query(funcionarios.readAll(req.params), (err, result) => {
         if (err == null)
-            res.json(Composite.aluno(result)).end();
+            res.json(conp.funci(result)).end();
         else
             res.status(500).end();
     });
